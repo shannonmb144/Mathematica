@@ -1,0 +1,1120 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     42152,       1112]
+NotebookOptionsPosition[     35857,       1004]
+NotebookOutlinePosition[     36234,       1020]
+CellTagsIndexPosition[     36191,       1017]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Plots - Shannon Brownlee, Ryan Heo, Daniel Kim, Josh Chung", "Title",
+ CellChangeTimes->{{3.7513793159018497`*^9, 
+  3.7513793386204405`*^9}},ExpressionUUID->"48111a14-532b-43cd-bcf6-\
+08ac274b65bd"],
+
+Cell[CellGroupData[{
+
+Cell["General Plots", "Chapter",
+ CellChangeTimes->{{3.751379355058427*^9, 
+  3.7513793573877935`*^9}},ExpressionUUID->"1355dc21-5f71-41ba-9f3e-\
+501e518ca135"],
+
+Cell[CellGroupData[{
+
+Cell["#3: (w=x^3+y^2*z) - Shannon", "Subchapter",
+ CellChangeTimes->{{3.751379415446617*^9, 3.7513794227123184`*^9}, 
+   3.751379497266623*^9, {3.751379891837765*^9, 
+   3.7513798936971483`*^9}},ExpressionUUID->"acc70612-c482-4d33-a872-\
+47cd442b02e1"],
+
+Cell[BoxData[
+ RowBox[{"ContourPlot3D", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", "^", "3"}], "+", 
+    RowBox[{
+     RowBox[{"y", "^", "2"}], "*", "z"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "50"}], ",", "50"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "50"}], ",", "50"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", 
+     RowBox[{"-", "50"}], ",", "50"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7523292187068353`*^9, 3.7523292324513836`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"5849f9df-490f-4d6b-b49e-7c22eefa4f08"],
+
+Cell["\<\
+This is a 3 dimensional graph of the 4 dimensional function. Notice there are \
+3 sheets in the contour plot, and none of them tough each other. The orange \
+and green sheets are reflections of one another, while to blue sheet has its \
+own lines of symmetry.\
+\>", "Text",
+ CellChangeTimes->{{3.7522094017733297`*^9, 3.7522094059703107`*^9}, {
+  3.752329266274059*^9, 3.752329308965686*^9}, {3.752849511486393*^9, 
+  3.75284953087284*^9}, {3.7529320287406025`*^9, 3.752932046251243*^9}, {
+  3.7529321997937746`*^9, 
+  3.7529322393342113`*^9}},ExpressionUUID->"36f03dc3-bd56-47ac-b0f4-\
+74a97f1e4504"],
+
+Cell[BoxData[
+ RowBox[{"DensityPlot3D", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", "^", "3"}], "+", 
+    RowBox[{
+     RowBox[{"y", "^", "2"}], "*", "z"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", 
+     RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7522075973478775`*^9, 3.7522075990826826`*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"b60f3bb0-e20a-4973-9701-0a5e861eb46c"],
+
+Cell["\<\
+Here is another representation of this graph as a DenistyPlot3D, which better \
+shows the values of the contours with the color scheme. Notice the darker \
+blue color at the corner (-10,-10,-10). This represents a much higher density \
+at this corner, while the orange represents a density greater than the \
+translucent section but less than that of the blue portion.\
+\>", "Text",
+ CellChangeTimes->{{3.7522094127521095`*^9, 3.7522094195577545`*^9}, {
+  3.7523293155386925`*^9, 3.7523293266053057`*^9}, {3.752329473672265*^9, 
+  3.752329480765177*^9}, {3.752329517145286*^9, 3.7523295203381023`*^9}, {
+  3.7523296384476194`*^9, 3.7523297811616883`*^9}, {3.7523299783222528`*^9, 
+  3.7523300141277647`*^9}},ExpressionUUID->"437c4275-02ac-48e9-a2f2-\
+02a36ec4e3fc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "#14: (",
+ StyleBox["F",
+  FontWeight->"Bold"],
+ "(x,y)=<x-3cos(y),3x+y>) - Shannon"
+}], "Subchapter",
+ CellChangeTimes->{{3.751379430444239*^9, 3.7513794368454437`*^9}, {
+  3.7513796563698845`*^9, 3.7513796566199064`*^9}, {3.751379903701948*^9, 
+  3.751379905936313*^9}},ExpressionUUID->"c42748db-1c59-493a-93ef-\
+063f51ffcef5"],
+
+Cell[BoxData[
+ RowBox[{"VectorPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "-", 
+      RowBox[{"3", 
+       RowBox[{"Cos", "[", "y", "]"}]}]}], ",", 
+     RowBox[{
+      RowBox[{"3", "x"}], "+", "y"}]}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.750775289674068*^9, 3.750775290455316*^9}, {
+  3.750775330312251*^9, 3.7507753315466347`*^9}, {3.7507754156656327`*^9, 
+  3.750775416650005*^9}, {3.750775548041301*^9, 3.7507755813055935`*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"a3eafe23-83f9-4046-ac45-62251c3e59f0"],
+
+Cell["\<\
+This is a graph of the vector-valued function above. Notice the different \
+lengths of the vectors toward the edges of the vector field, as well as the \
+directional changes of the vectors.\
+\>", "Text",
+ CellChangeTimes->{{3.7522094382204742`*^9, 3.7522094424045525`*^9}, {
+  3.7523300208351316`*^9, 3.752330048914109*^9}, {3.7523300932205477`*^9, 
+  3.7523300956765223`*^9}, {3.7523302090465603`*^9, 
+  3.7523302626724663`*^9}},ExpressionUUID->"5c074e18-e23f-45dc-a594-\
+60213e68dad3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["#4: (x+y^3/5=x^2+y) - Daniel", "Subchapter",
+ CellChangeTimes->{{3.7522065617456975`*^9, 3.7522065727005377`*^9}, {
+  3.7522066137678423`*^9, 
+  3.7522066699046717`*^9}},ExpressionUUID->"d30c2711-cc13-4e67-8223-\
+25a434dfc5bb"],
+
+Cell[BoxData[
+ RowBox[{"ContourPlot", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", "+", 
+     RowBox[{
+      RowBox[{"y", "^", "3"}], "/", "5"}]}], "==", 
+    RowBox[{
+     RowBox[{"x", "^", "2"}], "+", "y"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+   RowBox[{"GridLines", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "5"}], ",", 
+        RowBox[{"-", "4"}], ",", 
+        RowBox[{"-", "3"}], ",", 
+        RowBox[{"-", "2"}], ",", 
+        RowBox[{"-", "1"}], ",", "0", ",", "1", ",", "2", ",", "3", ",", "4", 
+        ",", "5"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "5"}], ",", 
+        RowBox[{"-", "4"}], ",", 
+        RowBox[{"-", "3"}], ",", 
+        RowBox[{"-", "2"}], ",", 
+        RowBox[{"-", "1"}], ",", "0", ",", "1", ",", "2", ",", "3", ",", "4", 
+        ",", "5"}], "}"}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7522067709567995`*^9, 3.7522067893752*^9}, {
+  3.752207307124134*^9, 3.752207316789344*^9}, {3.7528766696706443`*^9, 
+  3.752876704662698*^9}, {3.7528767580836735`*^9, 3.7528767652690325`*^9}, {
+  3.7528769472171073`*^9, 3.7528769475946474`*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"d5822f3f-41e9-4ceb-b0d6-2a83e0e5a0ce"],
+
+Cell["\<\
+There are two parts to this function due to discontinuities. The graph \
+contains an enclosed round section and a part that looks like a curved \
+absolute value, which means (using Cartesian coordinates) this is not a \
+function. The graph indicates the exponent in the y-value that ultimately \
+affects the graph, causing it to have multiple outputs for a set number of \
+inputs.\
+\>", "Text",
+ CellChangeTimes->{{3.752209459735834*^9, 3.7522094625988913`*^9}, {
+  3.75287664868235*^9, 3.752876659946148*^9}, {3.7528767811984773`*^9, 
+  3.7528768069390774`*^9}, {3.7529314187515564`*^9, 
+  3.7529315554110746`*^9}},ExpressionUUID->"a1dedd72-4fb2-4497-9bfe-\
+81732551aa41"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["#10: (x^2+(y^3)=x*z^2) - Daniel", "Subchapter",
+ CellChangeTimes->{{3.752206623221924*^9, 3.752206624333431*^9}, {
+  3.7522066870603156`*^9, 
+  3.7522067048190937`*^9}},ExpressionUUID->"2544ccbb-10b5-4e2e-b24e-\
+b9e86706c3ed"],
+
+Cell[BoxData[
+ RowBox[{"ContourPlot3D", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"x", "^", "2"}], "+", 
+     RowBox[{"y", "^", "3"}]}], "==", 
+    RowBox[{"x", "*", 
+     RowBox[{"z", "^", "2"}]}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "50"}], ",", "50"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "50"}], ",", "50"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", 
+     RowBox[{"-", "50"}], ",", "50"}], "}"}], ",", 
+   RowBox[{"Ticks", "\[Rule]", "Automatic"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7522067541765623`*^9, 3.752206775294305*^9}, {
+  3.752207261639843*^9, 3.7522072825566454`*^9}, {3.7522090845894327`*^9, 
+  3.752209132690186*^9}, {3.7522092024839735`*^9, 3.7522092617433906`*^9}, {
+  3.7522093301855555`*^9, 3.7522093411908474`*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"afc6b98c-9328-4641-8796-42c7899d74ea"],
+
+Cell["\<\
+The plot is a three dimensional surface of one sheet with a saddle point at \
+the center, (0, 0, 0). The curved sheets of the 3D plot resemble that of an \
+odd function and all three dimensional directions because the curves seem to \
+be the negative reflected version of the other side. This \
+\[OpenCurlyDoubleQuote]odd trend\[CloseCurlyDoubleQuote] shows the possible \
+relationship between the three different variables, especially their \
+exponential ratios.\
+\>", "Text",
+ CellChangeTimes->{{3.752209471167128*^9, 3.7522094752653227`*^9}, {
+  3.7528771333322005`*^9, 3.752877178476506*^9}, {3.7528772236425714`*^9, 
+  3.7528772308191495`*^9}, {3.7528772655089135`*^9, 3.752877272453842*^9}, {
+  3.7529315701054945`*^9, 3.752931602848668*^9}, {3.752931650570288*^9, 
+  3.752931765794242*^9}},ExpressionUUID->"8c497065-b921-4693-bc29-\
+6cbc388b60f0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["#2: (x*y*(-E^(-x^2-y^2) - Joshua C.", "Subchapter",
+ CellChangeTimes->{{3.7528482651840377`*^9, 3.752848284855443*^9}, {
+   3.7528489126021767`*^9, 3.7528489148147273`*^9}, 
+   3.7529313218486023`*^9},ExpressionUUID->"e822004e-db4c-4648-a545-\
+29526ef64e43"],
+
+Cell[BoxData[
+ RowBox[{"ContourPlot3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", "*", "y", "*", 
+     RowBox[{"(", 
+      RowBox[{"-", 
+       RowBox[{"E", "^", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{"x", "^", "2"}]}], "-", 
+          RowBox[{"y", "^", "2"}]}], ")"}]}]}], ")"}]}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", " ", 
+     RowBox[{"-", "6"}], ",", "6"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "6"}], ",", "6"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", 
+     RowBox[{"-", "6"}], ",", "6"}], "}"}], ",", 
+   RowBox[{"ImageSize", "\[Rule]", " ", "500"}], ",", " ", 
+   RowBox[{"Axes", "\[Rule]", "True"}], ",", "  ", 
+   RowBox[{"AspectRatio", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"TicksStyle", "\[Rule]", 
+    RowBox[{"Directive", "[", 
+     RowBox[{"Blue", ",", " ", "Thick", ",", " ", "Italic"}], "]"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.752877551167432*^9, 3.752877570400296*^9}, {
+  3.752877601697712*^9, 3.752877638380951*^9}, {3.752877678081566*^9, 
+  3.752877691986802*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"09f225d1-beea-4b76-bf9a-51c925f699b3"],
+
+Cell["\<\
+I did a contour plot to visualize the 3d graph.  It looks like an infinity \
+symbol with the 4 cylinder-like surfaces. Notice how none of the surfaces are \
+touching.\
+\>", "Text",
+ CellChangeTimes->{{3.7528495890612645`*^9, 3.7528496193452487`*^9}, {
+  3.7528775008942394`*^9, 3.752877532560245*^9}, {3.7529290768478413`*^9, 
+  3.752929087872456*^9}},ExpressionUUID->"41a17341-ce60-4260-b3c4-\
+8a653647bb19"],
+
+Cell[BoxData[
+ RowBox[{"Plot3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", "*", "y", "*", 
+     RowBox[{"(", 
+      RowBox[{"-", 
+       RowBox[{"E", "^", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{"x", "^", "2"}]}], "-", 
+          RowBox[{"y", "^", "2"}]}], ")"}]}]}], ")"}]}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", " ", 
+     RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "3"}], ",", "3"}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[9]:=",ExpressionUUID->"0ce5d370-3a71-4f29-8196-ad853f541483"],
+
+Cell["\<\
+We also plotted the 3d graph. It resembles a moon surface or a strange  \
+gravity well.\
+\>", "Text",
+ CellChangeTimes->{{3.752848399688491*^9, 3.7528484030927553`*^9}, {
+  3.752849642091959*^9, 
+  3.7528496677121*^9}},ExpressionUUID->"9270ad4d-66ed-44a9-87fe-3edcebb992c4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["#8: (x^2+x*y\[LessEqual] 8*Sin[x]-y) - Joshua C.", "Subchapter",
+ CellChangeTimes->{{3.7528482956663857`*^9, 3.752848303403211*^9}, {
+   3.752848786178419*^9, 3.7528487953455315`*^9}, {3.7528488376965795`*^9, 
+   3.7528489017518167`*^9}, 
+   3.7528492059867597`*^9},ExpressionUUID->"9a162fd2-e02f-48c5-92b6-\
+69017a2e82c1"],
+
+Cell[BoxData[
+ RowBox[{"RegionPlot", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"x", "^", "2"}], "+", 
+     RowBox[{"x", "*", "y"}]}], "\[LessEqual]", " ", 
+    RowBox[{
+     RowBox[{"8", "*", 
+      RowBox[{"Sin", "[", "x", "]"}]}], "-", "y"}]}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{
+      RowBox[{"-", "8"}], "Pi"}], ",", 
+     RowBox[{"8", "Pi"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{
+      RowBox[{"-", "8"}], "Pi"}], ",", 
+     RowBox[{"8", "Pi"}]}], "}"}], ",", " ", 
+   RowBox[{"Frame", "\[Rule]", " ", "False"}], ",", " ", 
+   RowBox[{"Axes", "\[Rule]", " ", "True"}], ",", " ", 
+   RowBox[{"PlotRange", "\[Rule]", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "25"}], ",", "25"}], "}"}]}], ",", 
+   RowBox[{"PlotStyle", "\[Rule]", " ", "LightBlue"}], ",", 
+   RowBox[{"GridLines", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"GridLinesStyle", "\[Rule]", 
+    RowBox[{"Directive", "[", 
+     RowBox[{"Orange", ",", "Dashed"}], "]"}]}], ",", " ", 
+   RowBox[{"AspectRatio", "\[Rule]", "Automatic"}]}], "]"}]], "Input",
+ CellChangeTimes->{3.7528490950417237`*^9},
+ CellLabel->"In[2]:=",ExpressionUUID->"dc33a510-d0e1-45bb-bdb4-8590ac6d3b0f"],
+
+Cell["\<\
+We used region plot to graph the inequality equation. Notice how each region \
+in the function is a reflection of the other.\
+\>", "Text",
+ CellChangeTimes->{{3.7528484093432674`*^9, 3.7528484129911766`*^9}, 
+   3.752929191507165*^9, {3.752929285994819*^9, 3.752929348309493*^9}, {
+   3.7529294633276205`*^9, 
+   3.7529294649231057`*^9}},ExpressionUUID->"c3b9fb2a-ca5a-4139-84a1-\
+352c60a081ed"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["#1 : (x^5 - 5x^4+2x-10)/(10x^3-50x^2-90x+450) - Ryan", "Subchapter",
+ CellChangeTimes->{{3.7528483093883114`*^9, 3.7528483137148404`*^9}, 
+   3.7528489999049845`*^9, {3.7528492475258827`*^9, 
+   3.7528492744149113`*^9}},ExpressionUUID->"14d3fe73-8025-465e-8533-\
+7ceca1a79c8f"],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"x", "^", "5"}], " ", "-", " ", 
+      RowBox[{"5", 
+       RowBox[{"x", "^", "4"}]}], "+", 
+      RowBox[{"2", "x"}], "-", "10"}], ")"}], "/", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"10", 
+       RowBox[{"x", "^", "3"}]}], "-", 
+      RowBox[{"50", 
+       RowBox[{"x", "^", "2"}]}], "-", 
+      RowBox[{"90", "x"}], "+", "450"}], ")"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{
+      RowBox[{"-", "1"}], " ", "0"}], ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{3.752849254186419*^9},
+ CellLabel->"In[3]:=",ExpressionUUID->"23d01ddb-3695-41fb-9edc-c0e44ebef6dd"],
+
+Cell["\<\
+This graph is in two non continuous pieces with an asymptote at x=3. The \
+graph goes to negative infinity as x approaches 3 from the left, and to \
+positive infinity as x approaches 3 from the right.\
+\>", "Text",
+ CellChangeTimes->{{3.7528486151683087`*^9, 3.752848619356142*^9}, {
+  3.752931785105369*^9, 
+  3.7529319001503124`*^9}},ExpressionUUID->"f018052d-ba23-4af5-8726-\
+96c2c9fa972d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["#11 : (a*Sin[t]+b*Cos[5t/2]) - Ryan", "Subchapter",
+ CellChangeTimes->{{3.752848324401992*^9, 3.7528483409469557`*^9}, {
+  3.752849001859524*^9, 3.7528490019812374`*^9}, {3.7528492654311037`*^9, 
+  3.7528492698625975`*^9}},ExpressionUUID->"f6f3b988-1f9c-48a5-8d8c-\
+4e5e83d95826"],
+
+Cell[BoxData[
+ RowBox[{"PolarPlot", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Sin", "[", "t", "]"}], "+", 
+    RowBox[{"Cos", "[", 
+     RowBox[{"5", 
+      RowBox[{"t", "/", "2"}]}], "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", 
+     RowBox[{
+      RowBox[{"-", "2"}], "Pi"}], ",", 
+     RowBox[{"2", "Pi"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7528494771583815`*^9, 3.752849480933984*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"a5da8297-b2ec-4bf0-be58-319d29c9b51a"],
+
+Cell["\<\
+This is  a polar plot that goes through the origin many times, though the \
+plot range only goes for 4Pi radians. The graph is symmetrical across the \
+y-axis.\
+\>", "Text",
+ CellChangeTimes->{{3.752848621603459*^9, 3.7528486352167654`*^9}, {
+  3.752930952244399*^9, 3.7529309698949685`*^9}, {3.7529310555698752`*^9, 
+  3.752931073231433*^9}, {3.752931156877917*^9, 
+  3.7529312559702425`*^9}},ExpressionUUID->"b4b06a1d-288c-4151-b347-\
+c25bb02b57eb"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Manipulates", "Chapter",
+ CellChangeTimes->{{3.7513799730381308`*^9, 
+  3.7513799754131327`*^9}},ExpressionUUID->"c1e85903-1336-4166-84a3-\
+d95c9c0c0cd4"],
+
+Cell[CellGroupData[{
+
+Cell["#3: (w=x^3+y^2*z) - Shannon", "Subchapter",
+ CellChangeTimes->{{3.75137998272577*^9, 
+  3.751380001413106*^9}},ExpressionUUID->"6f450ec7-51b6-491f-b840-\
+e9e19c4fbb61"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ContourPlot3D", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"a", "*", 
+       RowBox[{"x", "^", "3"}]}], "+", 
+      RowBox[{"b", "*", 
+       RowBox[{"y", "^", "2"}], "*", "c", "*", "z"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "100"}], ",", "100"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "100"}], ",", "100"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{"-", "100"}], ",", "100"}], "}"}], ",", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}], "}"}]}], 
+     ",", 
+     RowBox[{"Mesh", "\[Rule]", "False"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", "1"}], "}"}], ",", 
+     RowBox[{"-", "30"}], ",", "30"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"b", ",", "1"}], "}"}], ",", 
+     RowBox[{"-", "20"}], ",", "20"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"c", ",", "1"}], "}"}], ",", 
+     RowBox[{"-", "20"}], ",", "20"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.752330322043168*^9, 3.7523303568879714`*^9}, {
+  3.7523304166068506`*^9, 3.7523304397950983`*^9}, {3.752330672083331*^9, 
+  3.7523306879999056`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"88d6a7eb-47a4-47d3-b601-f71c42eb744c"],
+
+Cell["\<\
+As the value of a changes, the sheets rotate in a clockwise direction and \
+increase the curvature of each of the sheet, especially the blue center \
+sheet. As the value of b changes,  notice how the graph changes drastically,  \
+most notably in the y and z directions. As the value of c increases, notice \
+how the  green and orange sheets move toward infinity and negative infinity \
+faster.\
+\>", "Text",
+ CellChangeTimes->{{3.7522095042332044`*^9, 3.7522095067576*^9}, {
+  3.752330379775751*^9, 3.7523303933056993`*^9}, {3.7523304676394424`*^9, 
+  3.752330612832821*^9}, {3.752330643959689*^9, 3.7523306660417614`*^9}, {
+  3.7523306992590733`*^9, 3.752330716840211*^9}, {3.752330813982973*^9, 
+  3.752330865135791*^9}},ExpressionUUID->"ca5ee7e6-2077-41b4-9620-\
+86e11f0c13ab"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "#14: (",
+ StyleBox["F",
+  FontWeight->"Bold"],
+ "(x,y)=<x-3cos(y),3x+y>) - Shannon"
+}], "Subchapter",
+ CellChangeTimes->{
+  3.7513800149005556`*^9},ExpressionUUID->"b810bc86-c8c3-459c-8cc6-\
+c2712a4eefa9"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"VectorPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"x", "-", 
+        RowBox[{"p", "*", 
+         RowBox[{"Cos", "[", "y", "]"}]}]}], ",", 
+       RowBox[{
+        RowBox[{"q", "*", "x"}], "+", "y"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<x\>\"", ",", "\"\<y\>\""}], "}"}]}], ",", 
+     RowBox[{"VectorColorFunction", "\[Rule]", 
+      RowBox[{"ColorData", "[", "color", "]"}]}], ",", 
+     RowBox[{"Axes", "\[Rule]", "True"}], ",", " ", 
+     RowBox[{"Frame", "\[Rule]", "tf"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"p", ",", "3"}], "}"}], ",", "0", ",", "20"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"q", ",", "3"}], "}"}], ",", "0", ",", "20"}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"color", ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Pastel\>\"", ",", "\"\<Rainbow\>\"", ",", "\"\<AvocadoColors\>\"", 
+       ",", "\"\<CMYKColors\>\"", ",", "\"\<GreenPinkTones\>\""}], "}"}], ",",
+      "SetterBar"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"tf", ",", "True", ",", "\"\<Frame or Axes?\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"True", "\[Rule]", "\"\<Frame\>\""}], ",", " ", 
+       RowBox[{"False", "\[Rule]", "\"\<Axes\>\""}]}], "}"}], ",", 
+     "PopupMenu"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7522073976068697`*^9, 3.7522074128078938`*^9}, 
+   3.7523312264794054`*^9},
+ CellLabel->"In[11]:=",ExpressionUUID->"d2f66de4-280b-47e2-b6c0-f4ca72ff3e58"],
+
+Cell["\<\
+Notice how as p increases, the directions of the vectors begin to rotate more \
+around the three points where there smallest vectors are, creating more of a \
+\[OpenCurlyDoubleQuote]three whirlpool\[CloseCurlyDoubleQuote] look. As q \
+increases or decreases, the lengths of the vectors toward the outer edges \
+increase; as q decreases, the vectors turn to point away from the origin.\
+\>", "Text",
+ CellChangeTimes->{{3.752209511885723*^9, 3.752209514415249*^9}, {
+  3.7523308921966105`*^9, 3.7523309843340435`*^9}, {3.7523310499769807`*^9, 
+  3.752331074600782*^9}, {3.7523311579902797`*^9, 3.7523311782419286`*^9}, {
+  3.752331322868697*^9, 3.752331368436852*^9}, {3.7523314647978735`*^9, 
+  3.752331498234976*^9}},ExpressionUUID->"e97744a2-145e-420f-bc06-\
+203e5eb4c026"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["#4: (x+y^3/5=x^2+y) - Daniel", "Subchapter",
+ CellChangeTimes->{{3.7522070958306427`*^9, 
+  3.752207130604005*^9}},ExpressionUUID->"8d4db9cf-ce2a-40ba-ae0f-\
+793931bb80c5"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ContourPlot", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"x", "+", 
+       RowBox[{
+        RowBox[{"y", "^", "3"}], "/", "5"}]}], "\[Equal]", 
+      RowBox[{
+       RowBox[{"c", "*", 
+        RowBox[{"x", "^", "2"}]}], "+", "y"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+     RowBox[{"GridLines", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", 
+          RowBox[{"-", "4"}], ",", 
+          RowBox[{"-", "3"}], ",", 
+          RowBox[{"-", "2"}], ",", 
+          RowBox[{"-", "1"}], ",", "0", ",", "1", ",", "2", ",", "3", ",", 
+          "4", ",", "5"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", 
+          RowBox[{"-", "4"}], ",", 
+          RowBox[{"-", "3"}], ",", 
+          RowBox[{"-", "2"}], ",", 
+          RowBox[{"-", "1"}], ",", "0", ",", "1", ",", "2", ",", "3", ",", 
+          "4", ",", "5"}], "}"}]}], "}"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"c", ",", 
+     RowBox[{"-", "50"}], ",", "50"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7522073800417924`*^9, 3.752207387527976*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"4dd7a74b-4cab-4990-8a7b-a5482c4d1abd"],
+
+Cell["\<\
+The graph consists of an ellipse and a shape that is similar to that of an \
+absolute value graph, but in a curve V-shape. Depending on the coefficient of \
+the x^2 value, the narrowness of both of portions changes. The most \
+interesting part is when the coefficient is zero because the graph produces a \
+rotated x^3 seeming curve that looks like a mirrored S.\
+\>", "Text",
+ CellChangeTimes->{
+  3.7522082388447886`*^9},ExpressionUUID->"0490b0ad-e5b7-4097-87d5-\
+2026ba9b3f70"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["#10: (x^2+(y^3)=x*z^2) - Daniel", "Subchapter",
+ CellChangeTimes->{
+  3.7522071118612533`*^9},ExpressionUUID->"9e6f5c40-0daf-4c16-b717-\
+9c13509ef449"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ContourPlot3D", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"x", "^", "2"}], "+", 
+       RowBox[{"(", 
+        RowBox[{"y", "^", "3"}], ")"}]}], "==", 
+      RowBox[{"j", "*", "x", "*", 
+       RowBox[{"z", "^", "2"}]}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "50"}], ",", "50"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "50"}], ",", "50"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{"-", "50"}], ",", "50"}], "}"}], ",", 
+     RowBox[{"Ticks", "\[Rule]", "Automatic"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"j", ",", 
+     RowBox[{"-", "50"}], ",", "50"}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[4]:=",ExpressionUUID->"9053ad68-9227-4699-9715-8fd839b3b0c5"],
+
+Cell["\<\
+The graph consists of several different curved sheets in all eight octants, \
+and the coefficient of the x*z^2 value changes the arc of the sheets in each \
+octet. During some values, the octants even switch over, making the graph \
+look reflected or rotated. As j approaches zero, pay attention to the saddle \
+points since the closer the sheet becomes to being flat, the  closer to zero \
+is the concavity near the saddle points. When the coefficient becomes zero, \
+the resulting 3D graph looks like the roof of a building, producing an \
+extremely wide V-shape that stretches across the entire domain. \
+\>", "Text",
+ CellChangeTimes->{
+  3.7522082224556236`*^9, 3.7522095567096343`*^9, {3.752209586724496*^9, 
+   3.752209620481035*^9}, {3.752209654108551*^9, 
+   3.7522097547401896`*^9}},ExpressionUUID->"e13311f4-9088-4d54-ae85-\
+b66b559cbd6d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["#2: (x*y*(-E^(-x^2-y^2) - Joshua C.", "Subchapter",
+ CellChangeTimes->{
+  3.752848661629322*^9, {3.7529313340422173`*^9, 
+   3.752931334386026*^9}},ExpressionUUID->"374bbf13-cb8a-41ff-8d83-\
+bb1b8c7f5afb"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot3D", "[", 
+    RowBox[{
+     RowBox[{"x", "*", "y", "*", 
+      RowBox[{"(", 
+       RowBox[{"-", 
+        RowBox[{"E", "^", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", 
+              RowBox[{"x", "^", "2"}]}], "-", 
+             RowBox[{"y", "^", "2"}]}], ")"}], "*", "p"}], ")"}]}]}], ")"}]}],
+      ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", " ", 
+       RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+     RowBox[{"Ticks", "\[Rule]", "Automatic"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"p", ",", 
+     RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[13]:=",ExpressionUUID->"288281d0-1f32-4edd-84d9-1e89508afddc"],
+
+Cell["\<\
+We manipulated the plot 3d to see how much the 3d graph will change in the Z \
+direction, once we multiply the exponent (-x^2-y^2) by p values {-10,10}. It \
+reflects when x=0.\
+\>", "Text",
+ CellChangeTimes->{
+  3.75284980715353*^9, {3.7528502369523144`*^9, 3.752850250828527*^9}, {
+   3.752930916753694*^9, 
+   3.7529309349179835`*^9}},ExpressionUUID->"18152025-23a4-4a64-9a6f-\
+1b9dde0548b8"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ContourPlot3D", "[", 
+    RowBox[{
+     RowBox[{"x", "*", "y", "*", 
+      RowBox[{"(", 
+       RowBox[{"-", 
+        RowBox[{"E", "^", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", 
+              RowBox[{"x", "^", "2"}]}], "-", 
+             RowBox[{"y", "^", "2"}]}], ")"}], "*", "p"}], ")"}]}]}], ")"}]}],
+      ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", " ", 
+       RowBox[{"-", "4"}], ",", "4"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "4"}], ",", "4"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{"-", "4"}], ",", "4"}], "}"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "500"}], ",", " ", 
+     RowBox[{"Axes", "\[Rule]", "False"}], ",", "  ", 
+     RowBox[{"AspectRatio", "\[Rule]", "Automatic"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"p", ",", 
+     RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[12]:=",ExpressionUUID->"7ac714db-9827-4ebb-9a6e-a4f7c0b1be1a"],
+
+Cell["\<\
+We manipulated the Contour plot also with the same concept as above to see \
+how the contours will change. \
+\>", "Text",
+ CellChangeTimes->{
+  3.752849827070108*^9},ExpressionUUID->"120d801c-e6d2-4b72-9c2b-\
+8f9af61d9a72"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["#8: (x^5 - 5x^4+2x-10)/(10x^3-50x^2-90x+450) - Joshua C.", "Subchapter",
+ CellChangeTimes->{{3.7528486654133368`*^9, 3.7528486901465807`*^9}, {
+  3.7529313612729216`*^9, 
+  3.752931361994218*^9}},ExpressionUUID->"ae06a999-f8ba-446f-8ad7-\
+96304ec36cf7"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"RegionPlot", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"x", "^", 
+        RowBox[{"(", "2", ")"}]}], "+", 
+       RowBox[{"x", "*", "y", "*", "p"}]}], "\[LessEqual]", " ", 
+      RowBox[{
+       RowBox[{"8", "*", 
+        RowBox[{"Sin", "[", "x", "]"}]}], "-", 
+       RowBox[{"y", "*", "p"}]}]}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{
+        RowBox[{"-", "8"}], "Pi"}], ",", 
+       RowBox[{"8", "Pi"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{
+        RowBox[{"-", "8"}], "Pi"}], ",", 
+       RowBox[{"8", "Pi"}]}], "}"}], ",", " ", 
+     RowBox[{"Frame", "\[Rule]", " ", "False"}], ",", " ", 
+     RowBox[{"Axes", "\[Rule]", " ", "True"}], ",", " ", 
+     RowBox[{"PlotRange", "\[Rule]", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "25"}], ",", "25"}], "}"}]}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", " ", "LightBlue"}], ",", 
+     RowBox[{"GridLines", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"GridLinesStyle", "\[Rule]", 
+      RowBox[{"Directive", "[", 
+       RowBox[{"Orange", ",", "Dashed"}], "]"}]}], ",", " ", 
+     RowBox[{"AspectRatio", "\[Rule]", "Automatic"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"p", ",", 
+     RowBox[{"-", "20"}], ",", "20"}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[7]:=",ExpressionUUID->"6c5deaba-14ad-40f6-be2f-1cb877fef47e"],
+
+Cell["\<\
+We manipulated the region plot to see the regions change when p changes from \
+-20 to 20. At p=10, the graph reflects over the y-axis.\
+\>", "Text",
+ CellChangeTimes->{{3.752850169927994*^9, 
+  3.7528502094916086`*^9}},ExpressionUUID->"e4b641ae-721b-46d5-af19-\
+abc60eacc483"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["#1:  (x^5 - 5x^4+2x-10)/(10x^3-50x^2-90x+450) - Ryan", "Subchapter",
+ CellChangeTimes->{
+  3.7528486694039927`*^9, {3.752848706030284*^9, 3.7528487162816844`*^9}, 
+   3.7528491798398438`*^9, {3.752931273393347*^9, 
+   3.752931274741479*^9}},ExpressionUUID->"2d46ded5-9265-406c-a085-\
+3b18aa99b16a"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"k", "*", 
+         RowBox[{"x", "^", "5"}]}], " ", "-", " ", 
+        RowBox[{"5", 
+         RowBox[{"x", "^", "4"}]}], "+", 
+        RowBox[{"2", "x"}], "-", "10"}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"10", 
+         RowBox[{"x", "^", "3"}]}], "-", 
+        RowBox[{"50", 
+         RowBox[{"x", "^", "2"}]}], "-", 
+        RowBox[{"90", "x"}], "+", "450"}], ")"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"-", "40"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"k", ",", 
+     RowBox[{"-", "50"}], ",", "50"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7528500588155737`*^9, 3.752850066965438*^9}, {
+  3.7529297312521515`*^9, 3.7529297564884663`*^9}, {3.7529298348161163`*^9, 
+  3.752929853566554*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"d61aab7a-85ae-475c-8145-11a99f4c9153"],
+
+Cell["\<\
+As k changes, the different asymptotes become visible. As k increases, \
+another part/line of the function becomes visible. This portion is initially \
+concave down but becomes concave up when k gets extremely large.\
+\>", "Text",
+ CellChangeTimes->{{3.7528500788243437`*^9, 3.752850086792404*^9}, {
+  3.752930278459425*^9, 3.752930303588274*^9}, {3.7529303942591915`*^9, 
+  3.7529304070715685`*^9}, {3.7529305716005993`*^9, 3.7529307068594804`*^9}, {
+  3.752930877582286*^9, 
+  3.7529308927165565`*^9}},ExpressionUUID->"efa2ccdf-6d0f-4fd5-bee6-\
+fd6cdbccd714"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["#11: (a*Sin[t]+b*Cos[5t/2]) - Ryan", "Subchapter",
+ CellChangeTimes->{
+  3.752848673015419*^9, {3.752848718939097*^9, 3.752848726962648*^9}, {
+   3.752849181958494*^9, 3.7528491821193423`*^9}, {3.7529312966626954`*^9, 
+   3.752931297475498*^9}},ExpressionUUID->"68d331e6-2d3b-49e2-acb0-\
+602ca44fe7c0"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"PolarPlot", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"a", "*", 
+       RowBox[{"Sin", "[", "t", "]"}]}], "+", 
+      RowBox[{"b", "*", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"5", 
+         RowBox[{"t", "/", "2"}]}], "]"}]}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", 
+       RowBox[{
+        RowBox[{"-", "2"}], "Pi"}], ",", 
+       RowBox[{"2", "Pi"}]}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "1", ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"b", ",", "1", ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7504301355949125`*^9, 3.7504302403548546`*^9}, {
+  3.750430379220685*^9, 3.750430400159006*^9}, {3.7504304768222322`*^9, 
+  3.750430494451623*^9}, {3.750447585121503*^9, 3.7504475890131383`*^9}, {
+  3.752231886991011*^9, 3.752231932034339*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"5d7e9d5f-0e17-406b-a105-acefac0e7756"],
+
+Cell["\<\
+Notice how the size of the plot increases when b, the coefficient of Cosine, \
+increases. As a, the coefficient of Sine, increases, the amount of the plot \
+in the negative y direction decreases.\
+\>", "Text",
+ CellChangeTimes->{{3.752849869598956*^9, 
+  3.7528499980803895`*^9}},ExpressionUUID->"b8daff6c-a810-4823-a238-\
+f6d3c001ccf7"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1366, 685},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification:>0.75 Inherited,
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (November 4, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 205, 3, 73, "Title",ExpressionUUID->"48111a14-532b-43cd-bcf6-08ac274b65bd"],
+Cell[CellGroupData[{
+Cell[810, 29, 160, 3, 52, "Chapter",ExpressionUUID->"1355dc21-5f71-41ba-9f3e-501e518ca135"],
+Cell[CellGroupData[{
+Cell[995, 36, 252, 4, 48, "Subchapter",ExpressionUUID->"acc70612-c482-4d33-a872-47cd442b02e1"],
+Cell[1250, 42, 603, 17, 22, "Input",ExpressionUUID->"5849f9df-490f-4d6b-b49e-7c22eefa4f08"],
+Cell[1856, 61, 611, 11, 25, "Text",ExpressionUUID->"36f03dc3-bd56-47ac-b0f4-74a97f1e4504"],
+Cell[2470, 74, 604, 17, 22, "Input",ExpressionUUID->"b60f3bb0-e20a-4973-9701-0a5e861eb46c"],
+Cell[3077, 93, 775, 12, 42, "Text",ExpressionUUID->"437c4275-02ac-48e9-a2f2-02a36ec4e3fc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3889, 110, 346, 9, 48, "Subchapter",ExpressionUUID->"c42748db-1c59-493a-93ef-063f51ffcef5"],
+Cell[4238, 121, 740, 19, 22, "Input",ExpressionUUID->"a3eafe23-83f9-4046-ac45-62251c3e59f0"],
+Cell[4981, 142, 497, 9, 25, "Text",ExpressionUUID->"5c074e18-e23f-45dc-a594-60213e68dad3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5515, 156, 233, 4, 48, "Subchapter",ExpressionUUID->"d30c2711-cc13-4e67-8223-25a434dfc5bb"],
+Cell[5751, 162, 1406, 38, 22, "Input",ExpressionUUID->"d5822f3f-41e9-4ceb-b0d6-2a83e0e5a0ce"],
+Cell[7160, 202, 683, 12, 42, "Text",ExpressionUUID->"a1dedd72-4fb2-4497-9bfe-81732551aa41"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7880, 219, 232, 4, 48, "Subchapter",ExpressionUUID->"2544ccbb-10b5-4e2e-b24e-b9e86706c3ed"],
+Cell[8115, 225, 912, 23, 22, "Input",ExpressionUUID->"afc6b98c-9328-4641-8796-42c7899d74ea"],
+Cell[9030, 250, 864, 14, 42, "Text",ExpressionUUID->"8c497065-b921-4693-bc29-6cbc388b60f0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9931, 269, 264, 4, 48, "Subchapter",ExpressionUUID->"e822004e-db4c-4648-a545-29526ef64e43"],
+Cell[10198, 275, 1208, 32, 22, "Input",ExpressionUUID->"09f225d1-beea-4b76-bf9a-51c925f699b3"],
+Cell[11409, 309, 419, 8, 25, "Text",ExpressionUUID->"41a17341-ce60-4260-b3c4-8a653647bb19"],
+Cell[11831, 319, 628, 19, 22, "Input",ExpressionUUID->"0ce5d370-3a71-4f29-8196-ad853f541483"],
+Cell[12462, 340, 284, 6, 25, "Text",ExpressionUUID->"9270ad4d-66ed-44a9-87fe-3edcebb992c4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12783, 351, 329, 5, 48, "Subchapter",ExpressionUUID->"9a162fd2-e02f-48c5-92b6-69017a2e82c1"],
+Cell[13115, 358, 1229, 33, 38, "Input",ExpressionUUID->"dc33a510-d0e1-45bb-bdb4-8590ac6d3b0f"],
+Cell[14347, 393, 405, 8, 25, "Text",ExpressionUUID->"c3b9fb2a-ca5a-4139-84a1-352c60a081ed"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14789, 406, 283, 4, 48, "Subchapter",ExpressionUUID->"14d3fe73-8025-465e-8533-7ceca1a79c8f"],
+Cell[15075, 412, 711, 22, 22, "Input",ExpressionUUID->"23d01ddb-3695-41fb-9edc-c0e44ebef6dd"],
+Cell[15789, 436, 403, 8, 25, "Text",ExpressionUUID->"f018052d-ba23-4af5-8726-96c2c9fa972d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16229, 449, 286, 4, 48, "Subchapter",ExpressionUUID->"f6f3b988-1f9c-48a5-8d8c-4e5e83d95826"],
+Cell[16518, 455, 493, 14, 22, "Input",ExpressionUUID->"a5da8297-b2ec-4bf0-be58-319d29c9b51a"],
+Cell[17014, 471, 461, 9, 25, "Text",ExpressionUUID->"b4b06a1d-288c-4151-b347-c25bb02b57eb"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17524, 486, 160, 3, 52, "Chapter",ExpressionUUID->"c1e85903-1336-4166-84a3-d95c9c0c0cd4"],
+Cell[CellGroupData[{
+Cell[17709, 493, 174, 3, 48, "Subchapter",ExpressionUUID->"6f450ec7-51b6-491f-b840-e9e19c4fbb61"],
+Cell[17886, 498, 1467, 42, 22, "Input",ExpressionUUID->"88d6a7eb-47a4-47d3-b601-f71c42eb744c"],
+Cell[19356, 542, 790, 13, 42, "Text",ExpressionUUID->"ca5ee7e6-2077-41b4-9620-86e11f0c13ab"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20183, 560, 223, 8, 48, "Subchapter",ExpressionUUID->"b810bc86-c8c3-459c-8cc6-c2712a4eefa9"],
+Cell[20409, 570, 1901, 52, 38, "Input",ExpressionUUID->"d2f66de4-280b-47e2-b6c0-f4ca72ff3e58"],
+Cell[22313, 624, 785, 12, 42, "Text",ExpressionUUID->"e97744a2-145e-420f-bc06-203e5eb4c026"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23135, 641, 178, 3, 48, "Subchapter",ExpressionUUID->"8d4db9cf-ce2a-40ba-ae0f-793931bb80c5"],
+Cell[23316, 646, 1447, 41, 22, "Input",ExpressionUUID->"4dd7a74b-4cab-4990-8a7b-a5482c4d1abd"],
+Cell[24766, 689, 490, 9, 42, "Text",ExpressionUUID->"0490b0ad-e5b7-4097-87d5-2026ba9b3f70"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25293, 703, 157, 3, 48, "Subchapter",ExpressionUUID->"9e6f5c40-0daf-4c16-b717-9c13509ef449"],
+Cell[25453, 708, 854, 25, 22, "Input",ExpressionUUID->"9053ad68-9227-4699-9715-8fd839b3b0c5"],
+Cell[26310, 735, 860, 14, 58, "Text",ExpressionUUID->"e13311f4-9088-4d54-ae85-b66b559cbd6d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27207, 754, 211, 4, 48, "Subchapter",ExpressionUUID->"374bbf13-cb8a-41ff-8d83-bb1b8c7f5afb"],
+Cell[27421, 760, 902, 27, 22, "Input",ExpressionUUID->"288281d0-1f32-4edd-84d9-1e89508afddc"],
+Cell[28326, 789, 405, 9, 25, "Text",ExpressionUUID->"18152025-23a4-4a64-9a6f-1b9dde0548b8"],
+Cell[28734, 800, 1128, 32, 22, "Input",ExpressionUUID->"7ac714db-9827-4ebb-9a6e-a4f7c0b1be1a"],
+Cell[29865, 834, 233, 6, 25, "Text",ExpressionUUID->"120d801c-e6d2-4b72-9c2b-8f9af61d9a72"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30135, 845, 259, 4, 48, "Subchapter",ExpressionUUID->"ae06a999-f8ba-446f-8ad7-96304ec36cf7"],
+Cell[30397, 851, 1455, 39, 38, "Input",ExpressionUUID->"6c5deaba-14ad-40f6-be2f-1cb877fef47e"],
+Cell[31855, 892, 286, 6, 25, "Text",ExpressionUUID->"e4b641ae-721b-46d5-af19-abc60eacc483"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32178, 903, 304, 5, 48, "Subchapter",ExpressionUUID->"2d46ded5-9265-406c-a085-3b18aa99b16a"],
+Cell[32485, 910, 1098, 31, 22, "Input",ExpressionUUID->"d61aab7a-85ae-475c-8145-11a99f4c9153"],
+Cell[33586, 943, 571, 10, 25, "Text",ExpressionUUID->"efa2ccdf-6d0f-4fd5-bee6-fd6cdbccd714"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34194, 958, 308, 5, 48, "Subchapter",ExpressionUUID->"68d331e6-2d3b-49e2-acb0-602ca44fe7c0"],
+Cell[34505, 965, 962, 25, 22, "Input",ExpressionUUID->"5d7e9d5f-0e17-406b-a105-acefac0e7756"],
+Cell[35470, 992, 347, 7, 25, "Text",ExpressionUUID->"b8daff6c-a810-4823-a238-f6d3c001ccf7"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

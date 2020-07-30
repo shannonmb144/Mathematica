@@ -1,0 +1,141 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4390,        133]
+NotebookOptionsPosition[      4094,        120]
+NotebookOutlinePosition[      4437,        135]
+CellTagsIndexPosition[      4394,        132]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Show", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"ParametricPlot3D", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"x", ",", "y", ",", 
+       RowBox[{
+        RowBox[{"Sin", "[", "x", "]"}], "-", 
+        RowBox[{"Sin", "[", "y", "]"}], "-", "1"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "6"}], ",", "6"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "6"}], ",", "6"}], "}"}], ",", 
+     RowBox[{"MeshShading", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"LightRed", ",", "LightOrange"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"Cyan", ",", "Cyan"}], "}"}]}], "}"}]}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"ParametricPlot3D", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"x", "+", "11"}], ",", "y", ",", 
+       RowBox[{"4", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"x", "-", "y"}], ")"}], "/", 
+         RowBox[{"(", 
+          RowBox[{"1", "+", 
+           RowBox[{"x", "^", "2"}], "+", 
+           RowBox[{"y", "^", "2"}]}], ")"}]}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "6"}], ",", "6"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+     RowBox[{"Mesh", "\[Rule]", "False"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", 
+      RowBox[{"Darker", "[", 
+       RowBox[{"Green", ",", "0.3"}], "]"}]}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{
+     RowBox[{"Cone", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "14"}], ",", "0", ",", 
+           RowBox[{"-", "1"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "14"}], ",", "0", ",", "6"}], "}"}]}], "}"}], ",", 
+       "7"}], "]"}], ",", 
+     RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Plot3D", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{
+       RowBox[{"1", "/", "4"}], "*", "x", " ", "y"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "4"}], ",", 
+       RowBox[{"-", "12"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "6"}], ",", "5"}], "}"}], ",", 
+     RowBox[{"MeshShading", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"Blue", ",", "LightGreen"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"Purple", ",", "Pink"}], "}"}]}], "}"}]}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"PlotRange", "\[Rule]", "All"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"AxesLabel", "\[Rule]", " ", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "y", ",", "z"}], "}"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJwdzEsowwEAx/G1+O9gSXkV2usg2lZOWrNkmzSP0Bwk+y+PdtCURcm2hpW8
+UtSkpIlobLRY2CSMFDbkMBFmbUnK7LA0tQv7/Q/fPrcvt6tPqaHTaDR2Kujo
+nFFmBL6kwcndNuhdHiGhlGXQwN5poRZGRKJeeGo1OWBmpcoJXxMDLjj6qHFD
+g1m+ynj4klriYjsktg5eoIsrCkGFV9fqSTm/sUf5Yy9VwSwLXQ1rBbcTULb5
+PAWTi7JZ2F84NA+5HMkaPKox2mCwmbUFJ3mSbSg37+5AP+eass7kPIQdOusl
+PFcFbuH9fvgO2haICLyoP/6E3aFwDPrOVv6giUgQhynVPTwGzPw9yYDRCj4T
+Sm7IPDi4z8qHae3GIsj0Mbgw3VZdAp1xrRBmB65EsMtFE0NxcryK+sXclDny
+cgWsWh+gzF3SN8Bvx1MTfCejJPSMxSk5jTYtLJ7j62HBcJ4JlrEjZvj20TIB
+HQI/5T/Xqhn/
+  "],ExpressionUUID->"569c818d-9548-45f2-8421-a8308cf6b203"]
+},
+WindowSize->{759, 601},
+WindowMargins->{{Automatic, 295}, {24, Automatic}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3532, 98, 219, "Input",ExpressionUUID->"569c818d-9548-45f2-8421-a8308cf6b203"]
+}
+]
+*)
+
